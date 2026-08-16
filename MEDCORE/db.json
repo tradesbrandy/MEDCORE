@@ -1,10 +1,89 @@
 {
   "medications": [
-    { "id": 1, "name": "Ibuprofen 200mg", "description": "Pain & fever relief", "category": "Pain Relief", "price": 8 },
-    { "id": 2, "name": "Cetirizine 10mg", "description": "Allergy relief, non-drowsy", "category": "Allergy", "price": 10 },
-    { "id": 3, "name": "Vitamin C 1000mg", "description": "Immune support", "category": "Vitamins", "price": 12 },
-    { "id": 4, "name": "Amoxicillin 500mg", "description": "Antibiotic (Rx required)", "category": "Antibiotics", "price": 15 },
-    { "id": 5, "name": "Loratadine 10mg", "description": "24hr allergy relief", "category": "Allergy", "price": 9 },
-    { "id": 6, "name": "Multivitamin Daily", "description": "Complete daily nutrients", "category": "Vitamins", "price": 14 }
-  ]
+    {
+      "id": "8lwpOCkx8AQ",
+      "name": "Ibuprofen 200mg",
+      "description": "Fast-acting relief for pain, inflammation, and fever",
+      "category": "Pain Relief",
+      "price": 8
+    },
+    {
+      "id": "n2kD9fRt7Lp",
+      "name": "Acetaminophen 500mg",
+      "description": "Gentle relief for headaches and minor aches",
+      "category": "Pain Relief",
+      "price": "5"
+    },
+    {
+      "id": "q5vB3xWm1Zt",
+      "name": "Naproxen 220mg",
+      "description": "Long-lasting relief for joint and muscle pain",
+      "category": "Pain Relief",
+      "price": 9
+    },
+    {
+      "id": "r8jN6yTk4Xc",
+      "name": "Cetirizine 10mg",
+      "description": "24-hour, non-drowsy allergy relief",
+      "category": "Allergy",
+      "price": 10
+    },
+    {
+      "id": "f3hM2wQz9Vs",
+      "name": "Loratadine 10mg",
+      "description": "Once-daily relief from seasonal allergies",
+      "category": "Allergy",
+      "price": 9
+    },
+    {
+      "id": "u7cP5aLb0Ry",
+      "name": "Fexofenadine 180mg",
+      "description": "Fast, non-drowsy relief for hay fever symptoms",
+      "category": "Allergy",
+      "price": 11
+    },
+    {
+      "id": "d1sK8eNj3Ho",
+      "name": "Vitamin D3 2000 IU",
+      "description": "Supports bone health and immune function",
+      "category": "Vitamins",
+      "price": 12
+    },
+    {
+      "id": "g6tF4uIc7Wa",
+      "name": "Vitamin C 1000mg",
+      "description": "Antioxidant support for immune health",
+      "category": "Vitamins",
+      "price": 7
+    },
+    {
+      "id": "m9bA1oGx5Pe",
+      "name": "Multivitamin Complete",
+      "description": "Daily blend of essential vitamins and minerals",
+      "category": "Vitamins",
+      "price": 15
+    },
+    {
+      "id": "k4zR7iYd2Nf",
+      "name": "Amoxicillin 500mg",
+      "description": "Broad-spectrum antibiotic for bacterial infections",
+      "category": "Antibiotics",
+      "price": 18
+    },
+    {
+      "id": "w2xC6pSl8Bu",
+      "name": "Azithromycin 250mg",
+      "description": "Short-course antibiotic for respiratory infections",
+      "category": "Antibiotics",
+      "price": 22
+    },
+    {
+      "id": "j5vD3nHk1Qm",
+      "name": "Doxycycline 100mg",
+      "description": "Broad-spectrum antibiotic for a range of infections",
+      "category": "Antibiotics",
+      "price": 16
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

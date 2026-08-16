@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import Shop from "./componets/Shop";
-import * as MedicationsContext from "./MedicationsContext";
+import Shop from "../components/Shop";
+import * as MedicationsContext from "../MedicationsContext";
 
 const mockMedications=[
   { id: 1, name: "Ibuprofen 200mg", description: "Pain & fever relief", category: "Pain Relief", price: 8 },

@@ -1,5 +1,5 @@
 import {useState,useId,useRef} from "react";
-import{useMedications} from "./MedicationsContext";
+import{useMedications} from "../MedicationsContext";
 
 function Shop(){
     const {medications,loading,error,deleteMedication}=useMedications();

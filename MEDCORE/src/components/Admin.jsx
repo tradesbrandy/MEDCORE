@@ -6,6 +6,9 @@ function Admin() {
   const [form, setForm] = useState({ name: "", description: "", category: "", price: "" });
   const [editingId, setEditingId] = useState(null);
   const nameId = useId();
+  const descriptionId = useId();
+  const categoryId = useId();
+  const priceId = useId();
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -53,8 +56,9 @@ function Admin() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-purple-600 mb-1">Description</label>
+            <label htmlFor={descriptionId} className="block text-sm font-semibold text-purple-600 mb-1">Description</label>
             <input
+              id={descriptionId}
               name="description"
               value={form.description}
               onChange={handleChange}
@@ -64,8 +68,9 @@ function Admin() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-purple-600 mb-1">Category</label>
+            <label htmlFor={categoryId} className="block text-sm font-semibold text-purple-600 mb-1">Category</label>
             <input
+              id={categoryId}
               name="category"
               value={form.category}
               onChange={handleChange}
@@ -75,8 +80,9 @@ function Admin() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-purple-600 mb-1">Price</label>
+            <label htmlFor={priceId} className="block text-sm font-semibold text-purple-600 mb-1">Price</label>
             <input
+              id={priceId}
               name="price"
               type="number"
               value={form.price}

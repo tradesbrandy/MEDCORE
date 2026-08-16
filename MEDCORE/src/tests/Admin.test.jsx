@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import Admin from "../Admin";
+import Admin from "../components/Admin";
 import * as MedicationsContext from "../MedicationsContext";
 
 const mockMedications = [
@@ -32,13 +32,15 @@ describe("Admin", () => {
   it("calls addMedication with form data on submit", async () => {
     render(<Admin />);
 
-await userEvent.type(screen.getByLabelText(/medication name/i), "Aspirin");
-await userEvent.type(screen.getByPlaceholderText, ""); // no-op guard, see note below
-await userEvent.click(screen.getByRole("button", { name: /submit/i }));
+    await userEvent.type(screen.getByLabelText(/medication name/i), "Aspirin");
+    await userEvent.type(screen.getByLabelText(/description/i), "Pain relief");
+    await userEvent.type(screen.getByLabelText(/category/i), "Pain Relief");
+    await userEvent.type(screen.getByLabelText(/price/i), "5");
+    await userEvent.click(screen.getByRole("button", { name: /submit/i }));
 
-expect(addMedication).toHaveBeenCalledWith(
-  expect.objectContaining({ name: "Aspirin" })
-);
+    expect(addMedication).toHaveBeenCalledWith(
+      expect.objectContaining({ name: "Aspirin" })
+    );
   });
 
   it("lists existing medications with an Edit button", () => {
@@ -51,8 +53,8 @@ expect(addMedication).toHaveBeenCalledWith(
     render(<Admin />);
     await userEvent.click(screen.getByText("Edit"));
 
-expect(screen.getByDisplayValue("Ibuprofen 200mg")).toBeInTheDocument();
-expect(screen.getByRole("button", { name: /update medication/i })).toBeInTheDocument();
+    expect(screen.getByDisplayValue("Ibuprofen 200mg")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /update medication/i })).toBeInTheDocument();
   });
 
   it("calls updateMedication when submitting in edit mode", async () => {
@@ -60,7 +62,6 @@ expect(screen.getByRole("button", { name: /update medication/i })).toBeInTheDocu
     await userEvent.click(screen.getByText("Edit"));
     await userEvent.click(screen.getByRole("button", { name: /update medication/i }));
 
-expect(updateMedication).toHaveBeenCalledWith(1, expect.any(Object));
+    expect(updateMedication).toHaveBeenCalledWith(1, expect.any(Object));
   });
 });
-
