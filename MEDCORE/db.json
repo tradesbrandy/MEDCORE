@@ -1,0 +1,10 @@
+{
+  "medications": [
+    { "id": 1, "name": "Ibuprofen 200mg", "description": "Pain & fever relief", "category": "Pain Relief", "price": 8 },
+    { "id": 2, "name": "Cetirizine 10mg", "description": "Allergy relief, non-drowsy", "category": "Allergy", "price": 10 },
+    { "id": 3, "name": "Vitamin C 1000mg", "description": "Immune support", "category": "Vitamins", "price": 12 },
+    { "id": 4, "name": "Amoxicillin 500mg", "description": "Antibiotic (Rx required)", "category": "Antibiotics", "price": 15 },
+    { "id": 5, "name": "Loratadine 10mg", "description": "24hr allergy relief", "category": "Allergy", "price": 9 },
+    { "id": 6, "name": "Multivitamin Daily", "description": "Complete daily nutrients", "category": "Vitamins", "price": 14 }
+  ]
+}
